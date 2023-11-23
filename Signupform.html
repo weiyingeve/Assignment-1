@@ -3,11 +3,15 @@
     <head>
         <title>4NCT Fanpage</title>
         <style>
+
+            body {
+                font-family: helvetica;
+            }
+
             .header {
                 display: flex;
                 align-items: center;
                 padding: 10px;
-                padding-bottom: 40px;
                 background-color: #ffffff;
                 color: #000000;
             }
@@ -15,14 +19,13 @@
             .backbutton {
                 background-color: #8d8d8d;
                 border: none;
-                border-radius: 8px;
+                border-radius: 40px;
                 color: white;
-                padding: 15px 32px;
+                padding: 10px;
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
                 font-size: 32px;
-                margin: 4px 2px;
                 cursor: pointer;
                 margin-right: 10px;
             }
@@ -31,6 +34,30 @@
                 margin: 0; 
                 flex-grow: 1; 
                 text-align: center;
+                
+            }
+
+            .mainpage {
+                background-color: #c0ce01;
+                padding: 10px;
+                text-align: center;
+            }
+
+            label {
+                display: inline-block;
+                text-align: right;
+                padding: 12px;
+            }
+
+            div {
+                display: inline-block;
+                text-align: left;
+            }
+
+            footer {
+                background-color: #000000;
+                color: white;
+                padding: 10px;
             }
         </style>
     </head>
@@ -43,29 +70,33 @@
             <h1 class="header-text">Neo Culture Technology</h1>
         </header>
 
-        <section>
-            <h1>4NCT Newsletter</h1>
+        <section class="mainpage">
+            <h1><center>4NCT Newsletter</center></h1>
             <form action="Unitpage.html" method="post">
-                <h3>Email: </h3><input type="email" placeholder="email address">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your email address">
                 <br>
-                <h3>Name: </h3><input type="text" placeholder="name">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name">
                 <br>
-                <h3>What updates would you like to receive?</h3>
-                <input type="checkbox" name="updates" value="NCT127">NCT127 updates
-                <br>
-                <input type="checkbox" name="updates" value="NCTDREAM">NCT DREAM updates
-                <br>
-                <input type="checkbox" name="updates" value="WAYV">WAYV updates
-                <br>
-                <input type="checkbox" name="updates" value="NCTNEWTEAM">NCT NEW TEAM updates
-                <br>
-                <input type="checkbox" name="updates" value="NCTU">NCTU updates
-                <br>
-                <input type="checkbox" name="updates" value="NCTDOJAEJUNG">NCT DOJAEJUNG updates
-                <br>
-                <input type="checkbox" name="updates" value="NCT">NCT updates
-                <br>
-                <input type="checkbox" name="updates" value="SOLO">member solo updates
+                <legend>What updates would you like to receive?</legend>
+                <div>
+                    <input type="checkbox" name="updates" value="NCT127">NCT127 updates
+                    <br>
+                    <input type="checkbox" name="updates" value="NCTDREAM">NCT DREAM updates
+                    <br>
+                    <input type="checkbox" name="updates" value="WAYV">WAYV updates
+                    <br>
+                    <input type="checkbox" name="updates" value="NCTNEWTEAM">NCT NEW TEAM updates
+                    <br>
+                    <input type="checkbox" name="updates" value="NCTU">NCTU updates
+                    <br>
+                    <input type="checkbox" name="updates" value="NCTDOJAEJUNG">NCT DOJAEJUNG updates
+                    <br>
+                    <input type="checkbox" name="updates" value="NCT">NCT updates
+                    <br>
+                    <input type="checkbox" name="updates" value="SOLO">member solo updates
+                </div>
                 <br>
                 <br>
                 <button>Submit</button>

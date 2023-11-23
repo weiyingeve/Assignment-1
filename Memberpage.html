@@ -3,7 +3,15 @@
     <head>
         <title>4NCT Fanpage</title>
         <style>
+
+            html {
+                background-color: #c0ce01;
+            }
             
+            body {
+                font-family: helvetica;
+            }
+
             .header {
                 display: flex;
                 align-items: center;
@@ -33,6 +41,80 @@
                 flex-grow: 1; 
                 text-align: center;
             }
+
+            navbar {
+                padding-left: 100px;
+                padding-right: 100px;
+                padding-bottom: 30px;
+                background-color: white;
+                justify-content: space-between;
+                display: flex;
+            }
+
+            .navheader {
+                text-align: center;
+                color: black;
+            }
+
+            .img-container {
+                position: relative;
+            }
+
+            .memberimg {
+                height: 1024px;
+                 object-fit: cover;
+                object-position: 20% 20%; 
+                display: block;
+                width: 100%;
+            }
+
+            .membername {
+                position: absolute;
+                top: 85%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #b3b3b3;
+                border-radius: 45px;
+                color: black;
+                padding: 15px 32px;
+                font-size: 64px;
+                text-align: center;
+            }
+
+            .flex-container {
+                    padding-left: 100px;
+                    padding-right: 100px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+            }
+
+            .socials {
+                .social {
+                margin: 10px;
+                flex-basis: 15%;
+            }
+            }
+
+            .fansite {
+                flex-basis: 30%;
+                text-align: center;
+                margin: 10px;
+                text-decoration: none;
+                color: black;
+            }
+
+            .formlink {
+                background-color: #7d7d7d;
+                color: white;
+                padding: 30px;  
+                }
+
+            footer {
+                background-color: #000000;
+                color: white;
+                padding: 10px;
+            }
         </style>
     </head>
 
@@ -44,66 +126,80 @@
             <h1 class="header-text">Neo Culture Technology</h1>
         </header>
 
-        <section>
-            <img alt="Taeyong of NCT 127" src="TAEYONG2.jpeg" width="100%">
-            <h1>TAEYONG</h1>
-            <h4>Stage Name: TAEYONG (태용)</h4>
-            <h4>Birth Name: Lee Taeyong (이태용)</h4>
-            <h4>Birthday: 1 July 1995</h4>
-            <h4>Representative Emoji: 🌹</h4>
-            <h4>Sub-Unit(s): NCT U, NCT 127</h4>
-            <h4>Position: Leader, Main Rapper, Main Dancer, Sub Vocalist, Center, FOTG, Visual</h4>
+        <navbar>
+            <a href="#MemberDetails" class="navheader">Member Details</a>
+            <a href="#Socials" class="navheader">Socials</a>
+            <a href="#Fansites" class="navheader">Fan Sites</a>
+            <a href="#PCtemplate" class="navheader">Photocard Template</a>
+        </navbar>
+
+        <section id="MemberDetails">
+            <div class="img-container">
+                <img alt="Taeyong of NCT 127" src="TAEYONG2.jpeg" class="memberimg">
+                <h1 class="membername">TAEYONG</h1>
+            </div>
+            <center>
+                <h4>Stage Name: TAEYONG (태용)</h4>
+                <h4>Birth Name: Lee Taeyong (이태용)</h4>
+                <h4>Birthday: 1 July 1995</h4>
+                <h4>Representative Emoji: 🌹</h4>
+                <h4>Sub-Unit(s): NCT U, NCT 127</h4>
+                <h4>Position: Leader, Main Rapper, Main Dancer, Sub Vocalist, Center, FOTG, Visual</h4>
+            </center>
         </section>
 
         <section>
-            <h1 >Socials</h1>
-            <a href="https://www.instagram.com/taeoxo_nct/">
-                <img src="instagramicon.png" width="50px" height="50px">
-            </a>
-            <a href="https://www.threads.net/@taeoxo_nct">
-                <img src="threadsicon.png" width="50px" height="50px">
-            </a>
-            <a href="https://weibo.com/n/%E6%B3%B0%E5%AE%B9_TAEYONG?from=feed&loc=at">
-                <img src="weiboicon.png" width="50px" height="50px">
-            </a>
-            <a href="https://www.youtube.com/@TAEYONG">
-                <img src="youtubeicon.png" width="50px" height="50px">
-            </a>
-            <a href="https://open.spotify.com/artist/6SKusTjOAPsTZ6kareKQdm?si=iILAZrhfQ9Ki-WPCUnORTw">
-                <img src="Spotify_Icon_RGB_Green.png" width="50px" height="50px">
-            </a>
-            <a href="https://www.tiktok.com/@tik_tyong">
-                <img src="tiktokicon.png" width="50px" height="50px">
-            </a>
-            <a href="https://soundcloud.com/taeoxo">
-                <img src="soundcloudicon.png" width="50px" height="50px">
-            </a>
+            <h1 id="Socials"><center><u>Socials</u></center></h1>
+            <div class="flex-container">
+                <a href="https://www.instagram.com/taeoxo_nct/">
+                    <img src="instagramicon.png" width="50px" height="50px">
+                </a>
+                <a href="https://www.threads.net/@taeoxo_nct">
+                    <img src="threadsicon.png" width="50px" height="50px">
+                </a>
+                <a href="https://weibo.com/n/%E6%B3%B0%E5%AE%B9_TAEYONG?from=feed&loc=at">
+                    <img src="weiboicon.png" width="50px" height="50px">
+                </a>
+                <a href="https://www.youtube.com/@TAEYONG">
+                    <img src="youtubeicon.png" width="50px" height="50px">
+                </a>
+                <a href="https://open.spotify.com/artist/6SKusTjOAPsTZ6kareKQdm?si=iILAZrhfQ9Ki-WPCUnORTw">
+                    <img src="Spotify_Icon_RGB_Green.png" width="50px" height="50px">
+                </a>
+                <a href="https://www.tiktok.com/@tik_tyong">
+                    <img src="tiktokicon.png" width="50px" height="50px">
+                </a>
+                <a href="https://soundcloud.com/taeoxo">
+                    <img src="soundcloudicon.png" width="50px" height="50px">
+                </a>
+            </div>
         </section>
 
         <section>
-            <h1>Popular Fan Sites</h1>
-            <a href="https://twitter.com/TyrantSyndrome">
-                <img src="TYSY_pfp.jpg" width="100px" height="100px">
-            </a>
-            <h3>Tyrant Syndrome</h3>
-            <a href="https://twitter.com/LeetaeyongBar">
-                <img src="LeeTaeyongBar_pfp.jpg" width="100px" height="100px">
-            </a>
-            <h3>Lee Taeyong Bar</h3>
-            <a href="https://www.leetaeyong.com/">
-                <img src="LEETAEYONG.png" width="100px" height="100px">
-            </a>
-            <h3>Lee Taeyong Website (fanmade)</h3>
+            <h1 id="Fansites"><center><u>Popular Fan Sites</u></center></h1>
+            <div class="flex-container">
+                <a href="https://twitter.com/TyrantSyndrome" class="fansite">
+                    <img src="TYSY_pfp.jpg" width="100px" height="100px">
+                    <h3>Tyrant Syndrome</h3>
+                </a>
+                <a href="https://twitter.com/LeetaeyongBar" class="fansite">
+                    <img src="LeeTaeyongBar_pfp.jpg" width="100px" height="100px">
+                    <h3>Lee Taeyong Bar</h3>
+                </a>
+                <a href="https://www.leetaeyong.com/" class="fansite">
+                    <img src="LEETAEYONG.png" width="100px" height="100px">
+                    <h3>Lee Taeyong Website (fanmade)</h3>
+                </a>
+            </div>
         </section>
 
         <section>
-            <h1>Photocard Template</h1>
+            <h1 id="PCtemplate"><center><u>Photocard Template</u></center></h1>
             <img src="TAEYONG_pctemplate.png" width="100%">
-            <p>tbu...</p>
         </section>
 
-        <section>
-            <h2>For more NCT news, <a href=Signupform.html>Sign-up here</a></h2>
+        <section class="formlink">
+            <h2><center>For more NCT news, <a href=Signupform.html>Sign-up here</a></center></h2>
         </section>
         <footer>
             <p>Copyright&copy;4nct 2023</p>
