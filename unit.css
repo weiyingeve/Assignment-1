@@ -1,13 +1,16 @@
+/*images in the page CSS*/
 img{
     border-radius: 100%;
     width: 200px;
     height: 200px;
 }
 
+/*overall html css font*/
 body {
     font-family: helvetica;
 }
 
+/*header section*/
 .header {
     display: flex;
     align-items: center;
@@ -36,6 +39,7 @@ body {
     text-align: center;
 }
 
+/*responsive code*/
 .flex-container {
     background-color: #c0ce01;
     padding: 30px;
@@ -44,6 +48,7 @@ body {
     justify-content: space-between;
 }
 
+/*units in nct*/
 .units {
     margin: 10px;
     text-align: center;
@@ -58,6 +63,7 @@ body {
     margin-right: auto;
 }
 
+/*responsive display code*/
 @media (max-width: 992px) {
     .units {
         flex-basis: 40%;
@@ -68,6 +74,7 @@ body {
     }
 }
 
+/*footer with signup form*/
 .formlink {
     background-color: #7d7d7d;
     color: white;

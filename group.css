@@ -1,3 +1,4 @@
+/*CSS for whole page*/
 html {
     background-color: #c0ce01;
 }
@@ -6,6 +7,7 @@ body {
     font-family: helvetica;
 }
 
+/*header content*/
 .header {
     display: flex;
     align-items: center;
@@ -36,6 +38,7 @@ body {
     font-family: SMTOWNOTF-Bold;
 }
 
+/*navigation bar*/
 nav {
     padding: 30px;
     background-color: white;
@@ -48,6 +51,7 @@ nav {
     color: black;
 }
 
+/*for responsiveness and content alignment*/
 .flex-container {
     padding: 30px;
     display: flex;
@@ -55,6 +59,7 @@ nav {
     justify-content: space-between;
 }
 
+/*members section*/
 #members {
     text-align: center;
 }
@@ -76,6 +81,7 @@ nav {
     height: 200px;
 }
 
+/*music videos section*/
 .musicvideos {
     text-align: center;
 }
@@ -85,6 +91,7 @@ nav {
     color: black;
 }
 
+/*albums section*/
 #albums{text-align: center}
 
 .album {
@@ -93,8 +100,10 @@ nav {
     justify-content: center;
 }
 
+/*merch section*/
 .merch{text-align: center;}
 
+/*responsive for the above sections*/
 @media (max-width: 992px) {
     .album {
         flex-basis: 100%;
@@ -104,6 +113,7 @@ nav {
     }
 }
 
+/*concerts section + slideshow*/
 #concerts {text-align: center;}
 
 * {box-sizing: border-box}
@@ -188,6 +198,7 @@ to {opacity: 1}
 .prev, .next,.text {font-size: 11px}
 }
 
+/*socials section*/
 #socials {text-align: center}
 
 .social {
@@ -201,6 +212,7 @@ to {opacity: 1}
     height: 50px;
 }
 
+/*footer*/
 .formlink {
     background-color: #7d7d7d;
     color: white;

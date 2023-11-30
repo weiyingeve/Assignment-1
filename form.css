@@ -1,7 +1,8 @@
 body {
-    font-family: helvetica;
+    font-family: helvetica; /*fixes all the font for the page*/
 }
 
+/*header content*/
 .header {
     display: flex;
     align-items: center;
@@ -31,12 +32,14 @@ body {
     
 }
 
+/*main page background*/
 .mainpage {
     background-color: #c0ce01;
     padding: 10px;
     text-align: center;
 }
 
+/*form details*/
 .formtitle {
     text-align: center;
 }
@@ -52,6 +55,7 @@ div {
     text-align: left;
 }
 
+/*footer*/
 footer {
     background-color: #000000;
     color: white;
