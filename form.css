@@ -37,6 +37,10 @@ body {
     text-align: center;
 }
 
+.formtitle {
+    text-align: center;
+}
+
 label {
     display: inline-block;
     text-align: right;

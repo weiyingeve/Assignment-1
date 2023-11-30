@@ -35,7 +35,7 @@ body {
     text-align: center;
 }
 
-navbar {
+nav {
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 30px;
@@ -74,6 +74,10 @@ navbar {
     text-align: center;
 }
 
+.memberinfo {
+    text-align: center;
+}
+
 .flex-container {
         padding-left: 100px;
         padding-right: 100px;
@@ -82,11 +86,17 @@ navbar {
         justify-content: space-between;
 }
 
-.socials {
-    .social {
-    margin: 10px;
-    flex-basis: 15%;
+#Socials {
+    text-align: center;
 }
+
+.social {
+    width: 50px;
+    height: 50px;
+}
+
+#Fansites {
+    text-align: center;
 }
 
 .fansite {
@@ -97,10 +107,24 @@ navbar {
     color: black;
 }
 
+.fansiteicon {
+    width: 100px;
+    height: 100px;
+}
+
+#PCtemplate {
+    text-align: center;
+}
+
+.pocatemplate {
+    width: 100%;
+}
+
 .formlink {
     background-color: #7d7d7d;
     color: white;
-    padding: 30px;  
+    padding: 30px;
+    text-align: center;
     }
 
 footer {
